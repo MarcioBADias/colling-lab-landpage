@@ -40,7 +40,6 @@ export const Nav = styled.nav`
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    // Estilo condicional baseado no `isOpen` do hook
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   }
 `

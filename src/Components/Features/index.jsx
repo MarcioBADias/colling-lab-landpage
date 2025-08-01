@@ -20,7 +20,7 @@ const Features = () => {
   ]
 
   return (
-    <FeaturesContainer>
+    <FeaturesContainer id="features">
       <h2>Funcionalidades do Sistema</h2>
       <FeaturesWrapper>
         {featureList.map((feature, index) => (
