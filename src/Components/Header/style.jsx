@@ -5,8 +5,11 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background: #000;
+  background: var(--color-primary-light);
   color: #fff;
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
 
   // Estilo para o ícone de menu em dispositivos móveis
   svg {
@@ -36,7 +39,7 @@ export const Nav = styled.nav`
     top: 70px; // Ajuste este valor conforme o tamanho do seu header
     left: 0;
     right: 0;
-    background: #000;
+    background: var(--color-primary-light);
     flex-direction: column;
     align-items: center;
     padding: 20px;

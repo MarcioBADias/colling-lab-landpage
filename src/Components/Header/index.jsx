@@ -9,20 +9,40 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Logo>TI Automacoes</Logo>
+      <Logo>LOGO</Logo>
       {/* Botão para abrir/fechar o menu em dispositivos móveis */}
       <FaBars onClick={toggleMenu} style={{ cursor: 'pointer' }} />
       <Nav isOpen={isOpen}>
-        <NavLink as={Link} to="features" smooth={true} duration={500} onClick={closeMenu}>
+        <NavLink
+          as={Link}
+          to="features"
+          smooth={true}
+          duration={500}
+          onClick={closeMenu}
+        >
           Funcionalidades
         </NavLink>
-        <NavLink as={Link} to="pricing" smooth={true} duration={500} onClick={closeMenu}>
+        <NavLink
+          as={Link}
+          to="pricing"
+          smooth={true}
+          duration={500}
+          onClick={closeMenu}
+        >
           Preços
         </NavLink>
-        <NavLink as={Link} to="testimonials" smooth={true} duration={500} onClick={closeMenu}>
+        <NavLink
+          as={Link}
+          to="testimonials"
+          smooth={true}
+          duration={500}
+          onClick={closeMenu}
+        >
           Depoimentos
         </NavLink>
-        <NavLink href="#contact" onClick={closeMenu}>Contato</NavLink>
+        <NavLink href="#contact" onClick={closeMenu}>
+          Contato
+        </NavLink>
       </Nav>
     </HeaderContainer>
   )

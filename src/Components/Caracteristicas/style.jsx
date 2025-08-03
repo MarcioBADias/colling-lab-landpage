@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// Definindo o estilo do Features Section
-export const FeaturesContainer = styled.section`
+// Definindo o estilo do Caracteristicas Section
+export const CaracteristicasContainer = styled.section`
   padding: 60px 100px;
   background-color: #f5f5f5;
   text-align: center;
@@ -18,7 +18,7 @@ export const FeaturesContainer = styled.section`
   }
 `
 
-export const FeaturesWrapper = styled.div`
+export const CaracteristicasWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -29,7 +29,7 @@ export const FeaturesWrapper = styled.div`
   }
 `
 
-export const FeatureCard = styled.div`
+export const CaracteristicaCard = styled.div`
   background-color: white;
   padding: 30px;
   border-radius: 10px;

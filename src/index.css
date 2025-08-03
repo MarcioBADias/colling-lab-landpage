@@ -1,3 +1,13 @@
+:root {
+  --color-light: #eeeeee;
+  --color-primary-light: #eda189;
+  --color-primary-dark: #8b0000;
+  --color-secondary-light: #a7d1d4;
+  --color-secondary-dark: #069aa1;
+  --color-gray: #dde0e6;
+  --color-dark: #323232;
+}
+
 * {
   margin: 0;
   padding: 0;

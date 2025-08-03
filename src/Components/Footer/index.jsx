@@ -10,8 +10,8 @@ const Footer = () => {
     <FooterContainer>
       <FooterContent>
         <FooterSection>
-          <h3>TI Automacoes</h3>
-          <p>Transformando o futuro dos negócios com soluções de automação.</p>
+          <h3>Colling Lab</h3>
+          <p>Escola de Redação</p>
         </FooterSection>
         <FooterSection>
           <h3>Links Rápidos</h3>
@@ -47,7 +47,7 @@ const Footer = () => {
           </SocialMediaIcons>
         </FooterSection>
       </FooterContent>
-      <p>&copy; 2025 TI Automacoes. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Marcius Dev. Todos os direitos reservados.</p>
     </FooterContainer>
   )
 }

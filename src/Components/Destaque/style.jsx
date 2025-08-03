@@ -1,14 +1,13 @@
-import React from 'react'
 import styled from 'styled-components'
 
-// Definindo o estilo do HeroSection
-export const HeroContainer = styled.section`
+// Definindo o estilo do DestaqueSection
+export const DestaqueContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
-  background-color: #003d5b;
-  color: white;
+  background-color: var(--color-primary-light);
+  color: #000;
   flex-direction: column;
   text-align: center;
 
@@ -18,11 +17,10 @@ export const HeroContainer = styled.section`
   }
 `
 
-export const HeroText = styled.div`
+export const DestaqueText = styled.div`
   max-width: 500px;
-
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 700;
   }
@@ -30,6 +28,10 @@ export const HeroText = styled.div`
   p {
     font-size: 1.25rem;
     margin-bottom: 30px;
+  }
+
+  span {
+    color: var(--color-primary-dark);
   }
 
   button {
@@ -46,11 +48,15 @@ export const HeroText = styled.div`
       background-color: #d63f18;
     }
   }
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
 `
 
-export const HeroImage = styled.div`
+export const DestaqueImage = styled.div`
   img {
-    width: 100%;
+    width: 50%;
     max-width: 500px;
     border-radius: 10px;
   }

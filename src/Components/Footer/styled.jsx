@@ -1,10 +1,9 @@
-import React from 'react'
 import styled from 'styled-components'
 
 // Estilo do footer
 export const FooterContainer = styled.footer`
-  background-color: #003d5b;
-  color: white;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
   padding: 40px 100px;
   text-align: center;
 
@@ -36,7 +35,7 @@ export const FooterSection = styled.div`
   p,
   a {
     font-size: 1rem;
-    color: white;
+    color: var(--color-dark);
     margin-bottom: 10px;
     text-decoration: none;
     &:hover {
