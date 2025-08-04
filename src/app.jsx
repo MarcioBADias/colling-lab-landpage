@@ -7,6 +7,7 @@ import { Footer } from './Components/Footer'
 import { Destaque } from './Components/Destaque'
 import { Form } from './Components/Form'
 import { Modulos } from './Components/Modulos'
+import { WhatsAppButton } from './Components/WhatsappButton'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Caracteristicas />
       <Modulos />
       <Footer />
+      <WhatsAppButton />
     </Router>
   )
 }
