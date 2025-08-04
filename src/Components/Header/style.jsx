@@ -25,9 +25,8 @@ export const HeaderContainer = styled.header`
   }
 `
 
-export const Logo = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
+export const Logo = styled.img`
+  height: 30px;
 `
 
 export const Nav = styled.nav`

@@ -4,12 +4,18 @@ import { useMenu } from '../../hooks/useMenu'
 import { FaBars } from 'react-icons/fa' // Exemplo de React Icon
 import { Link } from 'react-scroll'
 
-const Header = () => {
+const Header = ({ isDestaqueVisible }) => {
   const { isOpen, toggleMenu, closeMenu } = useMenu()
 
   return (
     <HeaderContainer>
-      <Logo>LOGO</Logo>
+      {/* Lógica de renderização condicional */}
+      {isDestaqueVisible ? (
+        <div style={{ width: '150px' }} /> // Espaço em branco com a mesma largura da logo
+      ) : (
+        <Logo src="./Logo Collig Lab - fundo png.png" alt="Logo" />
+      )}
+
       {/* Botão para abrir/fechar o menu em dispositivos móveis */}
       <FaBars onClick={toggleMenu} style={{ cursor: 'pointer' }} />
       <Nav isOpen={isOpen}>

@@ -1,14 +1,11 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { DestaqueContainer, DestaqueImage, DestaqueText } from './style'
 
-const Destaque = () => {
+const Destaque = forwardRef((props, ref) => {
   return (
-    <DestaqueContainer>
+    <DestaqueContainer ref={ref}>
       <DestaqueImage>
-        <img
-          src="./Logo Collig Lab - fundo png.png" // Substitua pela imagem real
-          alt="Logo"
-        />
+        <img src="./Logo Collig Lab - fundo png.png" alt="Logo" />
       </DestaqueImage>
       <DestaqueText>
         <h1>
@@ -24,15 +21,10 @@ const Destaque = () => {
             </strong>
           </span>
         </p>
-        <a
-          href="https://escolacolling.hotmart.host/pagina-de-vendas-0ea6cfe2-06fd-45ed-aa3e-279e5d830d52"
-          target="_blank"
-        >
-          <button>Inscreva-se já na turma de setembro</button>
-        </a>
+        <button>Inscreva-se já na turma de setembro</button>
       </DestaqueText>
     </DestaqueContainer>
   )
-}
+})
 
 export { Destaque }
